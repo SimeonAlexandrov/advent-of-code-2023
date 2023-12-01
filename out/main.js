@@ -49,3 +49,4 @@ function runAoC(day, part, customInput) {
 // const result = runAoC(1, 'a', 'dummy-input')
 const result = runAoC(1, 'a');
 console.log(`===== Result: ${result} =====`);
+//# sourceMappingURL=main.js.map
