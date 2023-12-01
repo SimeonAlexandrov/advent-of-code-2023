@@ -28,7 +28,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Welcome to AoC 2023!");
 const fs = __importStar(require("fs"));
-const solution_1 = __importDefault(require("./solutions/day01/solution"));
+// import { default as day01 } from './solutions/day01/solution-a';
+const solution_b_1 = __importDefault(require("./solutions/day01/solution-b"));
 function pad(num, size) {
     let s = num + "";
     while (s.length < size)
@@ -41,12 +42,14 @@ function runAoC(day, part, customInput) {
     const input = fs.readFileSync(inputFileName, 'utf8');
     switch (day) {
         case 1:
-            return (0, solution_1.default)(input);
+            return (0, solution_b_1.default)(input);
         case 2:
             console.log('Hmmm');
     }
 }
 // const result = runAoC(1, 'a', 'dummy-input')
-const result = runAoC(1, 'a');
+// const result = runAoC(1, 'a')
+// const result = runAoC(1, 'b', 'dummy-input')
+const result = runAoC(1, 'b');
 console.log(`===== Result: ${result} =====`);
 //# sourceMappingURL=main.js.map

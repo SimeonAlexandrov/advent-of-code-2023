@@ -1,7 +1,8 @@
 console.log("Welcome to AoC 2023!")
 
 import * as fs from 'fs';
-import { default as day01 } from './solutions/day01/solution';
+// import { default as day01 } from './solutions/day01/solution-a';
+import { default as day01 } from './solutions/day01/solution-b';
 
 function pad(num:number, size:number): string {
     let s = num+"";
@@ -22,5 +23,8 @@ function runAoC(day: number, part: 'a' | 'b', customInput?: string) {
 }
 
 // const result = runAoC(1, 'a', 'dummy-input')
-const result = runAoC(1, 'a')
+// const result = runAoC(1, 'a')
+// const result = runAoC(1, 'b', 'dummy-input')
+const result = runAoC(1, 'b')
+
 console.log(`===== Result: ${result} =====`)
